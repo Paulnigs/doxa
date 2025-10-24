@@ -51,25 +51,25 @@ export function AboutSection() {
       title: "Twist Styles",
       description: "Creative and versatile twist hairstyles"
     },
-       {
+    {
       image: "/Twistt.jpg",
-      title: "Twist Styles",
-      description: "Creative and versatile twist hairstyles"
+      title: "Passion Twists",
+      description: "Elegant passion twists for a romantic, effortless look"
     },
-       {
+    {
       image: "/twist2.jpg",
-      title: "Twist Styles",
-      description: "Creative and versatile twist hairstyles"
+      title: "Senegalese Twists",
+      description: "Classic Senegalese twists with sleek, polished finish"
     },
-       {
+    {
       image: "/twist3.jpg",
-      title: "Twist Styles",
-      description: "Creative and versatile twist hairstyles"
+      title: "Spring Twists",
+      description: "Bouncy spring twists for natural movement and style"
     },
     {
       image: "/twist4.jpg",
-      title: "Twist Styles",
-      description: "Creative and versatile twist hairstyles"
+      title: "Kinky Twists",
+      description: "Bold kinky twists for maximum texture and volume"
     }
   ]
 
