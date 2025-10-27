@@ -8,7 +8,6 @@ const testimonials = [
   {
     name: "Aisha Mohammed",
     role: "Ghana Weaving Enthusiast",
-    image: "/ghanaweaving.jpg",
     content:
       "The Ghana weaving style I got from Doxaluxe is absolutely stunning! The precision in their braiding technique and pattern design is exceptional. My hair looks amazing and the style has lasted perfectly.",
     rating: 5,
@@ -16,7 +15,6 @@ const testimonials = [
   {
     name: "Sarah Okoro",
     role: "Natural Hair Advocate",
-    image: "/bobmarley.jpg",
     content:
       "Their expertise with dreadlocks is unmatched! They understood exactly what I wanted and created the perfect style. The maintenance advice they gave me has been invaluable for keeping my locs healthy.",
     rating: 5,
@@ -24,7 +22,6 @@ const testimonials = [
   {
     name: "Blessing Adebayo",
     role: "Regular Client",
-    image: "/weavingii.jpg",
     content:
       "I'm in love with their weaving techniques! The stylist took time to understand my preferences and suggested styles that perfectly match my face shape. The attention to detail is remarkable.",
     rating: 5,
@@ -32,7 +29,6 @@ const testimonials = [
   {
     name: "Joy Okonkwo",
     role: "Professional Stylist",
-    image: "/twist.jpg",
     content:
       "The twist styles they create are works of art! As a fellow stylist, I'm impressed by their innovative techniques and commitment to hair health. They're setting new standards in African hairstyling.",
     rating: 5,
@@ -40,7 +36,6 @@ const testimonials = [
   {
     name: "Fatima Ibrahim",
     role: "Business Professional",
-    image: "/twist2.jpg",
     content:
       "Found my go-to salon for protective styling! They create beautiful, professional-looking styles that are perfect for my corporate environment while maintaining African beauty traditions.",
     rating: 5,
@@ -89,6 +84,17 @@ export function TestimonialsSection() {
                   ))}
                 </div>
 
+                {/* Quote symbol */}
+                <div className="mb-6">
+                  <svg
+                    className="w-12 h-12 text-primary/20"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M9.563,8.25c-0.955,0-1.864,0.379-2.538,1.054S6,10.887,6,11.842s0.379,1.864,1.054,2.538 s1.583,1.054,2.538,1.054c2.839,0,3.75-2.25,3.75-2.25h-2.25C9.375,13.183,7.5,13.183,7.5,11.842s1.875-1.341,1.875-1.341h2.25 c0,0-0.911-2.25-3.75-2.25H9.563z M16.688,8.25c-0.955,0-1.864,0.379-2.538,1.054s-1.054,1.583-1.054,2.538 s0.379,1.864,1.054,2.538s1.583,1.054,2.538,1.054c2.839,0,3.75-2.25,3.75-2.25h-2.25c-1.717,0-3.592,0-3.592-1.341 s1.875-1.341,1.875-1.341h2.25c0,0-0.911-2.25-3.75-2.25H16.688z" />
+                  </svg>
+                </div>
+
                 {/* Content */}
                 <blockquote className="text-lg sm:text-xl text-foreground mb-8 leading-relaxed text-pretty">
                   "{testimonials[currentIndex].content}"
@@ -96,14 +102,12 @@ export function TestimonialsSection() {
 
                 {/* Author */}
                 <div className="flex flex-col items-center">
-                  <img
-                    src={testimonials[currentIndex].image || "/placeholder.svg"}
-                    alt={testimonials[currentIndex].name}
-                    className="w-16 h-16 rounded-full object-cover mb-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-foreground">{testimonials[currentIndex].name}</div>
-                    <div className="text-sm text-muted-foreground">{testimonials[currentIndex].role}</div>
+                  <div className="h-0.5 w-12 bg-primary/20 mb-4"></div>
+                  <div className="font-serif text-lg font-semibold text-foreground">
+                    {testimonials[currentIndex].name}
+                  </div>
+                  <div className="text-sm text-primary mt-1">
+                    {testimonials[currentIndex].role}
                   </div>
                 </div>
               </div>
