@@ -34,7 +34,7 @@ export function AboutSection() {
     {
       image: "/ghanaweaving.jpg",
       title: "Ghana Weaving",
-      description: "Traditional Ghana weaving with a modern twist"
+      description: "Traditional Ghana weaving with a modern twister"
     },
     {
       image: "/bobmarley.jpg",
